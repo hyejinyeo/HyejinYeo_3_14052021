@@ -1,4 +1,2 @@
 # OpenClassrooms Projet 3
-OpenClassrooms
-Développeur Web
-Projet 3: Ohmyfood
+OpenClassrooms_Développeur Web_Projet 3: Ohmyfood
