@@ -1,0 +1,19 @@
+{
+  "name": "p3_yeohyejin_ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassrooms_Développeur Web_Projet 3: Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyejinyeo/HyejinYeo_3_14052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyejinyeo/HyejinYeo_3_14052021/issues"
+  },
+  "homepage": "https://github.com/hyejinyeo/HyejinYeo_3_14052021#readme"
+}
