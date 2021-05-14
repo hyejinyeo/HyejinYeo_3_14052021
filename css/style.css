@@ -1,9 +1,27 @@
-main {
+#localisation {
   font-family: "Roboto", sans-serif;
 }
 
-footer h2 {
+#presentation {
+  font-family: "Roboto", sans-serif;
+}
+
+#fontionnement {
+  font-family: "Roboto", sans-serif;
+}
+
+#restaurants {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+}
+footer h3 {
   font-family: "Shrikhand", cursive;
+}
+footer ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

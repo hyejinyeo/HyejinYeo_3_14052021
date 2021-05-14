@@ -1,9 +1,13 @@
-main {
-    font-family: 'Roboto', sans-serif;
-}
+// Order: utils, vendors, base, components, layout, pages, themes
 
-footer {
-    h2 {
-        font-family: 'Shrikhand', cursive;
-    }
-}
+@import "./utils/variables";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layout/header";
+@import "./layout/section1";
+@import "./layout/section2";
+@import "./layout/section3";
+@import "./layout/section4";
+@import "./layout/footer";
