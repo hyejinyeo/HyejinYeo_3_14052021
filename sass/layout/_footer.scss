@@ -1,6 +1,11 @@
 footer {
     font-family: $font-texte;
+    color: white;
+    background-color: #353535;
+    padding: 20px 20px 30px 20px;
     h3 {
         font-family: $font-logo-titres;
+        font-weight: 200;
+        margin-bottom: 15px;
     }
 }
