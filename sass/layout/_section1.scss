@@ -1,3 +1,14 @@
-#localisation {
+.localisation {
     font-family: $font-texte;
+    &__bloc {
+        font-size: 1em;
+        font-weight: 500;
+        color: #353535;
+        text-align: center;
+        background-color: #EAEAEA;
+        padding: 13px 0;
+        box-shadow: inset 0 0.1em 3px #D5D5D5;
+        i {
+            padding-right: 10px;}
+    }
 }
