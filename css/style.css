@@ -138,8 +138,57 @@ li {
 .restaurants h3 {
   font-size: 1.6em;
 }
-.restaurants img {
-  width: 80%;
+.restaurants__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte {
+  width: 330px;
+  height: 240px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 5px 15px #E5E5E5;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.carte img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.carte h4 {
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 15px 5px 10px;
+}
+.carte p {
+  font-size: 1em;
+  padding: 0 10px;
+}
+.carte i {
+  font-size: 1.3em;
+  font-weight: 100;
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+}
+.carte .nouveau {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  font-size: 0.9em;
+  color: #008766;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 footer {
