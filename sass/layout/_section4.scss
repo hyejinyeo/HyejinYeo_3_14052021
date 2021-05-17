@@ -1,3 +1,11 @@
-#restaurants {
+.restaurants {
     font-family: $font-texte;
+    background-color: #F6F6F6;
+    padding: 40px 20px;
+    h3 {
+        font-size: 1.6em;
+    }
+    img {
+        width: 80%;
+    }
 }

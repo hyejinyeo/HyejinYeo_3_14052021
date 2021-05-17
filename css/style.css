@@ -113,8 +113,16 @@ li {
   left: -12.5px;
   top: 20px;
 }
-#restaurants {
+.restaurants {
   font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+  padding: 40px 20px;
+}
+.restaurants h3 {
+  font-size: 1.6em;
+}
+.restaurants img {
+  width: 80%;
 }
 
 footer {
