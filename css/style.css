@@ -199,8 +199,18 @@ footer {
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
-  font-weight: 200;
+  font-size: 1.3em;
+  font-weight: 100;
   margin-bottom: 15px;
+}
+footer li {
+  padding: 3px 0;
+  font-size: 1em;
+}
+footer li i {
+  font-size: 0.8em;
+  width: 15px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
