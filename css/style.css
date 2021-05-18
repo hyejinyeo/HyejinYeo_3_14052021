@@ -224,4 +224,35 @@ footer li i {
   padding-right: 10px;
 }
 
+.menu__img {
+  width: 100%;
+}
+.menu__img img {
+  width: 100%;
+  height: 240px;
+}
+.menu__contenu {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  top: 280px;
+}
+
+.contenu__titre {
+  position: relative;
+}
+.contenu__titre h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 30px 20px;
+}
+.contenu__titre .fa-heart {
+  font-size: 1.3em;
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
