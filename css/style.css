@@ -49,6 +49,9 @@ li {
 .localisation__bloc i {
   padding-right: 10px;
 }
+.localisation__bloc h4 {
+  display: inline-block;
+}
 
 .presentation {
   font-family: "Roboto", sans-serif;
