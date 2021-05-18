@@ -12,7 +12,7 @@
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         top: 280px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 }
 
@@ -35,13 +35,41 @@
 .contenu__carte {
     font-family: $font-texte;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
     .carte__groupe {
-        margin-bottom: 20px;
+        margin: 10px 0 20px 0;
     }
     h3 {
         font-size: 1.1em;
         font-weight: 400;
         padding-bottom: 20px;
+    }
+    h3:after {
+        background: none repeat scroll 0 0 $couleur-tertiaire;
+        bottom: -6px;
+        content: "";
+        display: block;
+        height: 3px;
+        width: 45px;
+        position: relative;
+     }
+    .contenu__btn {
+        margin: auto;
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        background-color: $couleur-primaire;
+        background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+        border-radius: 50px;
+        box-shadow: 3px 5px 7px #D5D5D5;
+        text-align: center;
+        margin-bottom: 20px;
+        a {
+            color: white;
+            font-size: 0.95em;
+            padding: 15px 55px;
+        }
     }
 }
 
