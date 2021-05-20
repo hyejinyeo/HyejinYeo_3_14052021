@@ -1,6 +1,6 @@
 .restaurants {
     font-family: $font-texte;
-    background-color: #F6F6F6;
+    background-color: $couleur-grisclair;
     padding: 40px 20px;
     h3 {
         font-size: 1.6em;
@@ -17,7 +17,7 @@
     height: 240px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 3px 5px 15px #E5E5E5;
+    box-shadow: 3px 5px 15px $couleur-grismoyen;
     margin: 20px 0 10px 0;
     position: relative;
     img {
@@ -38,7 +38,7 @@
     }
     i {
         font-size: 1.3em;
-        font-weight: 100;
+        font-weight: normal;
         position: absolute;
         bottom: 35px;
         right: 20px;
@@ -50,7 +50,8 @@
         border-radius: 3px;
         background-color: $couleur-tertiaire;
         font-size: 0.9em;
-        color: #008766;
+        font-weight: 500;
+        color: darken($couleur-tertiaire, 37);
         text-align: center;
         position: absolute;
         top: 13px;

@@ -17,9 +17,9 @@
     width: 80%;
     height: 65px;
     line-height: 65px;
-    background-color: #F6F6F6;
+    background-color: $couleur-grisclair;
     border-radius: 15px;
-    box-shadow: 3px 5px 15px #E5E5E5;
+    box-shadow: 1px 2px 11px $couleur-grismoyen;
     margin: 0 0 30px 0;
     position: relative;  
     .btn__num {
@@ -38,7 +38,7 @@
     i {
         width: 15px;
         font-size: 0.9em;
-        color: #7E7E7E;
+        color: darken($couleur-grismoyen, 30);
         padding: 0 10px 0 30px;
     }
     > .fa-store {

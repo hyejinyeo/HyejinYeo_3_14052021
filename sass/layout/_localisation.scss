@@ -3,11 +3,11 @@
     &__element {
         font-size: 1em;
         font-weight: 500;
-        color: #353535;
+        color: $couleur-grisfonce;
         text-align: center;
-        background-color: #EAEAEA;
+        background-color: darken($couleur-grisclair, 5);
         padding: 13px 0;
-        box-shadow: inset 0 0.1em 3px #D5D5D5;
+        box-shadow: inset 0 2.5px 3px $couleur-grismoyen;
         i {
             padding-right: 10px;
         }
