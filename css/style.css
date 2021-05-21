@@ -136,12 +136,15 @@ li {
   color: #898989;
   padding: 0 10px 0 30px;
 }
-.etapes__btn > .fa-store {
-  color: #9356DC;
-}
 .etapes__btn span {
   font-size: 0.9em;
   font-weight: 500;
+}
+.etapes__btn--actif {
+  background-color: #f1f1f1;
+}
+.etapes__btn--actif i {
+  color: #9356DC;
 }
 
 /*3rd button - effect on clicked status to be added (background color: #F5EDFF, icon color: primary*/

@@ -41,12 +41,15 @@
         color: darken($couleur-grismoyen, 30);
         padding: 0 10px 0 30px;
     }
-    > .fa-store {
-        color:$couleur-primaire;
-    }
     span {
         font-size: 0.9em;
         font-weight: 500;
+    }
+    &--actif {
+        background-color: darken($couleur-grisclair, 2);
+        i {
+            color: $couleur-primaire;
+        }
     }
 }
 
