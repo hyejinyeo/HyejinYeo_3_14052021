@@ -11,8 +11,15 @@ footer {
     }
     li {
         padding: 3px 0;
-        font-size: 1em;
+        font-size: 0.9em;
+        a {
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
         i {
+            color: white;
             font-size: 0.8em;
             width: 15px;
             padding-right: 10px;
