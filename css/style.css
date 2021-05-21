@@ -263,7 +263,7 @@ li {
   position: relative;
 }
 .contenu__carte .contenu__btn {
-  margin: auto;
+  margin: 20px auto 40px auto;
   width: 200px;
   height: 50px;
   line-height: 50px;
@@ -272,7 +272,6 @@ li {
   border-radius: 50px;
   box-shadow: 3px 5px 7px #D5D5D5;
   text-align: center;
-  margin-bottom: 20px;
 }
 .contenu__carte .contenu__btn a {
   color: white;
@@ -280,40 +279,44 @@ li {
   padding: 15px 55px;
 }
 
-.container {
+.carte__container {
   display: flex;
   flex-direction: column;
 }
-.container .item {
+.carte__container .carte__item {
   position: relative;
 }
-.container .item .chkbx {
+.carte__container .carte__item .chkbx {
   position: absolute;
   z-index: 0;
   opacity: 0;
 }
-.container .item .item__btn {
+.carte__container .carte__item .item__btn {
   display: block;
   width: 98%;
   height: 40px;
   padding: 10px 0 10px 10px;
   background-color: white;
   border-radius: 15px;
-  box-shadow: 3px 5px 15px #E5E5E5;
+  box-shadow: 3px 5px 15px #D5D5D5;
   position: relative;
   margin-bottom: 20px;
 }
-.container .item .item__btn h4 {
+.carte__container .carte__item .item__btn .btn__nom {
   font-size: 1em;
+  font-weight: 600;
+  display: block;
+  padding-bottom: 1px;
 }
-.container .item .item__btn .details {
-  font-size: 0.9em;
+.carte__container .carte__item .item__btn .btn__details {
+  font-size: 0.85em;
 }
-.container .item .item__btn .prix {
+.carte__container .carte__item .item__btn .btn__prix {
   font-size: 0.9em;
   font-weight: 700;
   position: absolute;
   right: 20px;
+  bottom: 10px;
 }
 
 footer {
