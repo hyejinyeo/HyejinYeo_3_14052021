@@ -151,10 +151,11 @@ li {
 .restaurants {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 .restaurants h3 {
   font-size: 1.6em;
+  padding-left: 20px;
 }
 .restaurants__conteneur {
   display: flex;
