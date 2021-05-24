@@ -91,6 +91,11 @@ li {
   color: white;
   font-size: 0.95em;
 }
+#presentation .presentation__btn:hover {
+  background-color: #9b63df;
+  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+  box-shadow: 3px 5px 7px #c3c3c3;
+}
 
 #fonctionnement {
   font-family: "Roboto", sans-serif;
@@ -282,6 +287,11 @@ li {
   color: white;
   font-size: 0.95em;
   padding: 15px 55px;
+}
+.contenu__carte .contenu__btn:hover {
+  background-color: #9b63df;
+  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+  box-shadow: 3px 5px 7px #c3c3c3;
 }
 
 .carte__container {

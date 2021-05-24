@@ -11,3 +11,8 @@
     border-radius: 50px;
     box-shadow: 3px 5px 7px $couleur-grismoyen;
 }
+@mixin btn-effet {
+    background-color: lighten($couleur-primaire, 3);
+    background-image: linear-gradient(to bottom right, lighten($couleur-secondaire, 3), lighten($couleur-primaire, 3));
+    box-shadow: 3px 5px 7px darken($couleur-grismoyen,7);
+}

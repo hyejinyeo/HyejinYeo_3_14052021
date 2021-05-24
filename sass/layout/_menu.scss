@@ -63,6 +63,9 @@
             font-size: 0.95em;
             padding: 15px 55px;
         }
+        &:hover {
+            @include btn-effet;
+        }
     }
 }
 
