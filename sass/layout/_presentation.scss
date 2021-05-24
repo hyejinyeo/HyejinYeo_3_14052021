@@ -1,4 +1,4 @@
-.presentation {
+#presentation {
     font-family: $font-texte;
     background-color: $couleur-grisclair;
     display: flex;
@@ -6,7 +6,7 @@
     align-content: center;
     align-items: center;
     padding: 30px;
-    &__texte {
+    .presentation__texte {
         h2 {
             font-size: 1.6em;
             text-align: center;
@@ -19,7 +19,7 @@
             padding: 15px 0;
         }
     }
-    &__btn {
+    .presentation__btn {
         @include btn-gradient (210px);
         margin: 10px 0 20px 0;
         a {
