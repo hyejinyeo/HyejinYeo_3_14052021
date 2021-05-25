@@ -1,8 +1,15 @@
-/*Couleurs principales*/
+//Couleurs principales
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
-/*Couleurs supplémentaires*/
+//Couleurs supplémentaires
 $couleur-grisclair: #F6F6F6; 
 $couleur-grismoyen: #D5D5D5;
 $couleur-grisfonce: #353535;
+//Responsive Web - Breakpoints
+$breakpoints: (
+    mobile: 767px,
+    tablette-min: 768px,
+    tablette-max: 991px, 
+    desktop: 992px
+);
