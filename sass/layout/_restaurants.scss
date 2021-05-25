@@ -11,6 +11,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include tablette {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
 }
 .carte {
@@ -20,6 +30,13 @@
     border-radius: 15px;
     @include carte-shadow (15px);
     margin: 20px 0 10px 0;
+    @include tablette {
+        margin: 20px 20px;
+    }
+    @include desktop {
+        width: 430px;
+        margin: 20px 20px;
+    }
     position: relative;
     img {
         width: 100%;
@@ -40,9 +57,18 @@
     i {
         font-size: 1.3em;
         font-weight: normal;
+        fill: transparent;
         position: absolute;
         bottom: 35px;
         right: 20px;
+        &:hover {
+            // animation: fill 0.5s ease-in-out;
+            background:linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+            background:-webkit-linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
     }
     &--nouveau {
         width: 85px;
