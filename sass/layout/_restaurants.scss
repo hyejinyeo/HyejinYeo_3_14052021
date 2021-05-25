@@ -1,10 +1,10 @@
 #restaurants {
     font-family: $font-texte;
     background-color: $couleur-grisclair;
-    padding: 40px 0;
+    margin-bottom: 30px;
     h3 {
         font-size: 1.6em;
-        padding-left: 20px;
+        padding: 30px 20px;
     }
     .restaurants__conteneur {
         display: flex;
@@ -55,14 +55,15 @@
         padding: 0 10px;
     }
     i {
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: normal;
         fill: transparent;
         position: absolute;
         bottom: 35px;
         right: 20px;
+        // transition: all 1000ms;
+        // transform-origin: bottom center;
         &:hover {
-            // animation: fill 0.5s ease-in-out;
             background:linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
             background:-webkit-linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
             -webkit-background-clip: text;
