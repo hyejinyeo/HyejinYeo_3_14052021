@@ -218,20 +218,34 @@ li {
   font-size: 1em;
   padding: 0 10px;
 }
-.carte i {
-  font-size: 1.4em;
-  font-weight: normal;
-  fill: transparent;
+.carte__heart .empty {
   position: absolute;
   bottom: 35px;
   right: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  fill: transparent;
+  opacity: 1;
 }
-.carte i:hover {
+.carte__heart .full {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  transform: scale(0);
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   background: -webkit-linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
+}
+.carte__heart:hover .empty {
+  opacity: 0;
+}
+.carte__heart:hover .full {
+  transform: scale(1);
+  transition: transform 600ms;
+  transform-origin: bottom center;
 }
 .carte--nouveau {
   width: 85px;
