@@ -25,6 +25,7 @@
         a {
             color: white;
             font-size: 0.95em;
+            padding: 15px 20px;
         }
         &:hover {
             @include btn-effet;
