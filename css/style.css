@@ -245,7 +245,7 @@ li {
 }
 .carte__heart:hover .full {
   transform: scale(1);
-  transition: transform 500ms;
+  transition: transform 500ms ease-in;
   transform-origin: bottom center;
 }
 .carte--nouveau {
@@ -383,6 +383,8 @@ li {
 .carte__container .carte__item .item__btn .btn__prix {
   font-size: 0.9em;
   font-weight: 700;
+  background-color: white;
+  padding: 10px 5px 5px 5px;
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -402,16 +404,16 @@ li {
   position: absolute;
   right: 0;
   top: 0;
-  transform: scale(0);
+  transform: scale(0, 1);
 }
 .carte__container .carte__item .item__btn:hover .btn__prix {
-  right: 70px;
-  bottom: 10px;
+  transform: translateX(-50px);
+  transition: transform 500ms ease-in-out;
 }
 .carte__container .carte__item .item__btn:hover .btn__hover {
-  transform: scale(1);
+  transform: scale(1, 1);
   transform-origin: right;
-  transition: transform 500ms;
+  transition: transform 500ms ease-in-out;
 }
 
 footer {

@@ -76,14 +76,13 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
         &:hover {
             .empty {
                 opacity: 0;
             }
             .full {  
                 transform: scale(1);
-                transition: transform 500ms;
+                transition: transform 500ms ease-in;
                 transform-origin: bottom center;
             }
         }
