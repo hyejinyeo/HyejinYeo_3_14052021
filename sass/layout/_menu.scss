@@ -78,11 +78,6 @@
     flex-direction: column;
     .carte__item {
         position:relative;
-        .chkbx {
-            position: absolute;
-            z-index: 0;
-            opacity: 0;
-        }
         .item__btn {
             display: block;
             width: 98%;
@@ -94,23 +89,38 @@
             position: relative;
             margin-bottom: 20px;
             cursor: pointer;
-            .btn__nom {
-                font-size: 1em;
-                font-weight: 600;
-                display: block;
-                padding-bottom: 1px;
-            }
-            .btn__details {
-                font-size: 0.85em;
+            .btn__texte {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                .texte__nom {
+                    font-size: 1em;
+                    font-weight: 600;
+                    display: block;
+                    padding-bottom: 1px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .texte__details {
+                    font-size: 0.9em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
             }
             .btn__prix {
-                font-size: 0.9em;
+                display: inline-block;
+                height: 40px;
+                line-height: 60px;
+                padding: 10px 2px;
+                font-size: 1em;
                 font-weight: 700;
                 background-color: white;
-                padding: 10px 5px 5px 5px;
                 position: absolute;
                 right: 20px;
-                bottom: 10px;
+                bottom: 0px;
             }
             .btn__hover {
                 display: block;
@@ -119,7 +129,7 @@
                 text-align: center;
                 height: 40px;
                 padding: 10px 0;
-                width: 50px;
+                width: 55px;
                 line-height: 40px;
                 background-color: $couleur-tertiaire;
                 border-top-right-radius: 15px;
@@ -130,18 +140,22 @@
                 transform: scale(0, 1);
             }
             &:hover {
-                
+                .btn__texte {
+                    width: 70%;
+                    transition: width 500ms ease-in-out;
+                }
                 .btn__prix {
-                    transform: translateX(-50px);
+                    transform: translateX(-45px);
                     transition: transform 500ms ease-in-out;
                 }
                 .btn__hover {
                     transform: scale(1, 1);
                     transform-origin: right;
                     transition: transform 500ms ease-in-out;
-                    // & > i {
-                    //     transform: rotate(1);
-                    // }
+                }
+                .btn__hover > i {
+                    transform: rotate(360deg);
+                    transition: transform 500ms ease-in-out;
                 }
             }
         }
