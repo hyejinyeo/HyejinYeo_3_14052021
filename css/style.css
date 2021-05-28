@@ -141,6 +141,15 @@ li {
   color: #898989;
   padding: 0 10px 0 30px;
 }
+.etapes__btn .fa-mobile-alt {
+  transform: scale(1.15, 1);
+}
+.etapes__btn .fa-list-ul {
+  transform: scale(0.9, 1);
+}
+.etapes__btn .fa-store {
+  transform: scale(0.8, 1);
+}
 .etapes__btn span {
   font-size: 0.9em;
   font-weight: 500;

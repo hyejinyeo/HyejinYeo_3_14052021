@@ -42,6 +42,15 @@
         color: darken($couleur-grismoyen, 30);
         padding: 0 10px 0 30px;
     }
+    .fa-mobile-alt {
+        transform: scale(1.15, 1)
+    }
+    .fa-list-ul {
+        transform: scale(0.9, 1)
+    }  
+    .fa-store {
+        transform: scale(0.8, 1)
+    }
     span {
         font-size: 0.9em;
         font-weight: 500;
