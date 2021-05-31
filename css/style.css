@@ -20,7 +20,83 @@ li {
   list-style: none;
 }
 
-@keyframes heart {}
+.carte__heart .empty {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  fill: transparent;
+  opacity: 1;
+}
+.carte__heart .full {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  transform: scale(0);
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.carte__heart:hover .empty {
+  opacity: 0;
+}
+.carte__heart:hover .full {
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  transform-origin: bottom center;
+}
+
+.item__btn {
+  position: relative;
+  overflow: hidden;
+}
+.item__btn .btn__texte {
+  width: 100%;
+}
+.item__btn .btn__texte .texte__nom {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item__btn .btn__texte .texte__details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item__btn .btn__prix {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  transition: 400ms;
+}
+.item__btn .btn__hover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(55px);
+  transition: 400ms;
+}
+.item__btn:hover .btn__texte {
+  width: 70%;
+  transition: width 500ms ease-in-out;
+}
+.item__btn:hover .btn__prix {
+  transform: translateX(-45px);
+  transition: transform 500ms ease-in-out;
+}
+.item__btn:hover .btn__hover {
+  transform: translateX(0px);
+  transition: transform 500ms ease-in-out;
+}
+.item__btn:hover .btn__hover > i {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -83,17 +159,37 @@ li {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 50px;
   box-shadow: 3px 5px 7px #D5D5D5;
+  position: relative;
+  z-index: 1;
   margin: 10px 0 20px 0;
 }
 .presentation__btn a {
   color: white;
   font-size: 0.95em;
-  padding: 15px 20px;
+  z-index: 2;
 }
-.presentation__btn:hover {
-  background-color: #9b63df;
-  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+.presentation__btn:hover::after {
+  opacity: 1;
+}
+.presentation__btn::after {
+  content: "";
+  text-align: center;
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  background-color: #a674e2;
+  background-image: linear-gradient(to bottom right, #ff9de4, #a674e2);
   box-shadow: 3px 5px 7px #c3c3c3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.presentation__btn a {
+  padding: 15px 20px;
 }
 
 .fonctionnement {
@@ -228,35 +324,6 @@ li {
   font-size: 1em;
   padding: 0 10px;
 }
-.carte__heart .empty {
-  position: absolute;
-  bottom: 35px;
-  right: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  fill: transparent;
-  opacity: 1;
-}
-.carte__heart .full {
-  position: absolute;
-  bottom: 35px;
-  right: 20px;
-  font-size: 1.4em;
-  font-weight: bold;
-  transform: scale(0);
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
-  background: -webkit-linear-gradient(to bottom, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.carte__heart:hover .empty {
-  opacity: 0;
-}
-.carte__heart:hover .full {
-  transform: scale(1);
-  transition: transform 500ms ease-in-out;
-  transform-origin: bottom center;
-}
 .carte--nouveau {
   width: 85px;
   height: 30px;
@@ -343,25 +410,42 @@ li {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 50px;
   box-shadow: 3px 5px 7px #D5D5D5;
+  position: relative;
+  z-index: 1;
   margin: 20px auto 40px auto;
 }
 .contenu__carte .contenu__btn a {
   color: white;
   font-size: 0.95em;
-  padding: 15px 55px;
+  z-index: 2;
 }
-.contenu__carte .contenu__btn:hover {
-  background-color: #9b63df;
-  background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
+.contenu__carte .contenu__btn:hover::after {
+  opacity: 1;
+}
+.contenu__carte .contenu__btn::after {
+  content: "";
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  background-color: #a674e2;
+  background-image: linear-gradient(to bottom right, #ff9de4, #a674e2);
   box-shadow: 3px 5px 7px #c3c3c3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.contenu__carte .contenu__btn a {
+  padding: 15px 55px;
 }
 
 .carte__container {
   display: flex;
   flex-direction: column;
-}
-.carte__container .carte__item {
-  position: relative;
 }
 .carte__container .carte__item .item__btn {
   display: block;
@@ -371,30 +455,17 @@ li {
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 5px 15px #D5D5D5;
-  position: relative;
   margin-bottom: 20px;
   cursor: pointer;
-}
-.carte__container .carte__item .item__btn .btn__texte {
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .carte__container .carte__item .item__btn .btn__texte .texte__nom {
   font-size: 1em;
   font-weight: 600;
   display: block;
   padding-bottom: 2px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .carte__container .carte__item .item__btn .btn__texte .texte__details {
   font-size: 0.9em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .carte__container .carte__item .item__btn .btn__prix {
   display: inline-block;
@@ -404,9 +475,6 @@ li {
   font-size: 0.9em;
   font-weight: 700;
   background-color: white;
-  position: absolute;
-  right: 20px;
-  bottom: 0px;
 }
 .carte__container .carte__item .item__btn .btn__hover {
   display: block;
@@ -420,27 +488,6 @@ li {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: scale(0, 1);
-}
-.carte__container .carte__item .item__btn:hover .btn__texte {
-  width: 70%;
-  transition: width 500ms ease-in-out;
-}
-.carte__container .carte__item .item__btn:hover .btn__prix {
-  transform: translateX(-45px);
-  transition: transform 500ms ease-in-out;
-}
-.carte__container .carte__item .item__btn:hover .btn__hover {
-  transform: scale(1, 1);
-  transform-origin: right;
-  transition: transform 500ms ease-in-out;
-}
-.carte__container .carte__item .item__btn:hover .btn__hover > i {
-  transform: rotate(360deg);
-  transition: transform 500ms ease-in-out;
 }
 
 footer {

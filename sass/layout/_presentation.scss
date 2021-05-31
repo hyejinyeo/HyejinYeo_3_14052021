@@ -23,12 +23,7 @@
         @include btn-gradient (210px);
         margin: 10px 0 20px 0;
         a {
-            color: white;
-            font-size: 0.95em;
             padding: 15px 20px;
-        }
-        &:hover {
-            @include btn-effet;
         }
     }
 }
