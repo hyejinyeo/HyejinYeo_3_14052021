@@ -1,6 +1,6 @@
-#localisation {
+.localisation {
     font-family: $font-texte;
-    .localisation__element {
+    &__element {
         font-size: 1em;
         font-weight: 500;
         color: $couleur-grisfonce;

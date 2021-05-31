@@ -35,10 +35,10 @@ li {
   left: 5px;
 }
 
-#localisation {
+.localisation {
   font-family: "Roboto", sans-serif;
 }
-#localisation .localisation__element {
+.localisation__element {
   font-size: 1em;
   font-weight: 500;
   color: #353535;
@@ -47,14 +47,14 @@ li {
   padding: 13px 0;
   box-shadow: inset 0 2.5px 3px #D5D5D5;
 }
-#localisation .localisation__element i {
+.localisation__element i {
   padding-right: 10px;
 }
-#localisation .localisation__element h4 {
+.localisation__element h4 {
   display: inline-block;
 }
 
-#presentation {
+.presentation {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   display: flex;
@@ -63,18 +63,18 @@ li {
   align-items: center;
   padding: 30px;
 }
-#presentation .presentation__texte h2 {
+.presentation__texte h2 {
   font-size: 1.6em;
   text-align: center;
   padding: 0 10px;
 }
-#presentation .presentation__texte p {
+.presentation__texte p {
   font-size: 1.1em;
   font-weight: 300;
   text-align: center;
   padding: 15px 0;
 }
-#presentation .presentation__btn {
+.presentation__btn {
   text-align: center;
   width: 210px;
   height: 50px;
@@ -85,26 +85,26 @@ li {
   box-shadow: 3px 5px 7px #D5D5D5;
   margin: 10px 0 20px 0;
 }
-#presentation .presentation__btn a {
+.presentation__btn a {
   color: white;
   font-size: 0.95em;
   padding: 15px 20px;
 }
-#presentation .presentation__btn:hover {
+.presentation__btn:hover {
   background-color: #9b63df;
   background-image: linear-gradient(to bottom right, #ff88de, #9b63df);
   box-shadow: 3px 5px 7px #c3c3c3;
 }
 
-#fonctionnement {
+.fonctionnement {
   font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
 }
-#fonctionnement h3 {
+.fonctionnement h3 {
   font-size: 1.6em;
   padding: 30px 20px;
 }
-#fonctionnement .fonctionnement__etapes {
+.fonctionnement__etapes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,38 +154,37 @@ li {
   font-size: 0.9em;
   font-weight: 500;
 }
-.etapes__btn--actif {
-  background-color: #eeeeee;
+.etapes__btn:hover {
+  background-color: #F5EDFF;
 }
-.etapes__btn--actif i {
+.etapes__btn:hover i {
   color: #9356DC;
 }
 
-/*3rd button - effect on clicked status to be added (background color: #F5EDFF, icon color: primary*/
-#restaurants {
+.restaurants {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
   margin-bottom: 30px;
 }
-#restaurants h3 {
+.restaurants h3 {
   font-size: 1.6em;
   padding: 30px 20px;
 }
-#restaurants .restaurants__conteneur {
+.restaurants__conteneur {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  #restaurants .restaurants__conteneur {
+  .restaurants__conteneur {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 992px) {
-  #restaurants .restaurants__conteneur {
+  .restaurants__conteneur {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -273,20 +272,20 @@ li {
   right: 13px;
 }
 
-#menu {
+.menu {
   display: flex;
   flex-direction: column;
 }
-#menu .menu__img {
+.menu__img {
   width: 100%;
   margin-bottom: -50px;
 }
-#menu .menu__img img {
+.menu__img img {
   width: 100%;
   height: 270px;
   object-fit: cover;
 }
-#menu .menu__contenu {
+.menu__contenu {
   width: 100%;
   background-color: #F6F6F6;
   border-top-left-radius: 30px;

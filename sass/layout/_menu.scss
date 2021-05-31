@@ -1,7 +1,7 @@
-#menu { 
+.menu { 
     display: flex;
     flex-direction: column;
-    .menu__img {
+    &__img {
         width: 100%;
         margin-bottom: -50px;
         img {
@@ -10,7 +10,7 @@
             object-fit: cover;
         }
     }
-    .menu__contenu {
+    &__contenu {
         width: 100%;
         background-color: $couleur-grisclair;
         border-top-left-radius: 30px;
