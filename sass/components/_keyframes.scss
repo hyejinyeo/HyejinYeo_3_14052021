@@ -1,0 +1,59 @@
+//Page d'accueil__1: Loading Spinner
+
+//Pades de menu__1: Fade-in
+.fade {
+    opacity: 1;
+    &--1 {
+        animation: fade-in 600ms 100ms;
+    }
+    &--2 {
+        animation: fade-in 600ms 200ms;
+    }
+    &--3 {
+        animation: fade-in 600ms 300ms;
+    }
+    &--4 {
+        animation: fade-in 600ms 400ms;
+    }
+    &--5 {
+        animation: fade-in 600ms 500ms;
+    }
+    &--6 {
+        animation: fade-in 600ms 600ms;
+    }
+    &--7 {
+        animation: fade-in 600ms 700ms;
+    }
+    &--8 {
+        animation: fade-in 600ms 800ms;
+    }
+    &--9 {
+        animation: fade-in 600ms 900ms;
+    }
+    &--10 {
+        animation: fade-in 600ms 1000ms;
+    }
+}
+
+//use for to avoid repetition
+// .fade {
+//     &--#{i} {
+//         opacity: 1;
+//         @for $i from 1 through 10 {
+//             animation-name: fade-in;
+//             animation-duration: 300ms;
+//             animation-delay: 300*(#{$i}-1);
+//         }
+//     }
+// }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
