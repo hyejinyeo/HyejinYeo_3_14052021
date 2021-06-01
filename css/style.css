@@ -97,38 +97,52 @@ li {
   transition: transform 500ms ease-in-out;
 }
 
+.preloader {
+  opacity: 0;
+  animation: preloader 3000ms 100ms both;
+}
+
+@keyframes preloader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .fade {
   opacity: 1;
+  animation: fade-in 600ms;
 }
 .fade--1 {
-  animation: fade-in 600ms 100ms;
+  animation-delay: 100ms;
 }
 .fade--2 {
-  animation: fade-in 600ms 200ms;
+  animation-delay: 200ms;
 }
 .fade--3 {
-  animation: fade-in 600ms 300ms;
+  animation-delay: 300ms;
 }
 .fade--4 {
-  animation: fade-in 600ms 400ms;
+  animation-delay: 400ms;
 }
 .fade--5 {
-  animation: fade-in 600ms 500ms;
+  animation-delay: 500ms;
 }
 .fade--6 {
-  animation: fade-in 600ms 600ms;
+  animation-delay: 600ms;
 }
 .fade--7 {
-  animation: fade-in 600ms 700ms;
+  animation-delay: 700ms;
 }
 .fade--8 {
-  animation: fade-in 600ms 800ms;
+  animation-delay: 800ms;
 }
 .fade--9 {
-  animation: fade-in 600ms 900ms;
+  animation-delay: 900ms;
 }
 .fade--10 {
-  animation: fade-in 600ms 1000ms;
+  animation-delay: 1000ms;
 }
 
 @keyframes fade-in {
