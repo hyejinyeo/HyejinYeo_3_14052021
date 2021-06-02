@@ -544,7 +544,7 @@ li {
 }
 @media screen and (min-width: 992px) {
   .contenu__carte .carte__groupe {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 .contenu__carte .carte__groupe h3 {
@@ -656,15 +656,21 @@ footer {
   color: white;
   background-color: #353535;
   padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 992px) {
   footer {
-    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 45px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   footer {
-    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
   }
 }
 footer h3 {
@@ -672,6 +678,19 @@ footer h3 {
   font-size: 1.3em;
   font-weight: 100;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  footer h3 {
+    padding-right: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer h3 {
+    padding-right: 60px;
+  }
+}
+footer ul {
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   footer ul {
