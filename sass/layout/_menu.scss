@@ -41,8 +41,20 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    .carte--colonne {
+        width: 100%;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
     .carte__groupe {
         margin: 10px 0 20px 0;
+        width: 100%;
+        @include desktop {
+            padding: 0 5px;
+        }
         h3 {
             font-size: 1.1em;
             font-weight: 400;

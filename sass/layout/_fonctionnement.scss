@@ -4,17 +4,27 @@
     h3 {
         font-size: 1.6em;
         padding: 30px 20px;
+        @include desktop {
+            text-align: center;
+        }
     }
     &__etapes {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include desktop {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 }
 
 /*etapes bouton*/
 .etapes__btn {
     width: 80%;
+    @include desktop {
+        width: 27%;
+    }
     height: 65px;
     line-height: 65px;
     background-color: $couleur-grisclair;
@@ -56,8 +66,7 @@
         font-weight: 500;
     }
     &:hover {
-        background-color: #F5EDFF; //color-picker
-        // darken($couleur-grisclair, 3);
+        background-color: #F5EDFF; 
         i {
             color: $couleur-primaire;
         }

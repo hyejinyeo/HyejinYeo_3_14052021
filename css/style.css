@@ -57,6 +57,11 @@ li {
 .item__btn .btn__texte {
   width: 100%;
 }
+@media screen and (min-width: 992px) {
+  .item__btn .btn__texte {
+    width: 85%;
+  }
+}
 .item__btn .btn__texte .texte__nom {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -106,16 +111,14 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
   background-color: white;
   opacity: 0;
-  animation: preloader__opacity 3s 0s both;
+  animation: preloader__opacity 3s 0s;
 }
 .preloader__texte {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
   color: black;
-  z-index: 3;
 }
 .preloader__spin {
   position: absolute;
@@ -154,12 +157,17 @@ li {
 @keyframes preloader__opacity {
   0% {
     opacity: 1;
+    z-index: 2;
   }
   80% {
     opacity: 1;
   }
+  95% {
+    z-index: 2;
+  }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .fade {
@@ -310,10 +318,21 @@ li {
   font-size: 1.6em;
   padding: 30px 20px;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement h3 {
+    text-align: center;
+  }
+}
 .fonctionnement__etapes {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement__etapes {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /*etapes bouton*/
@@ -327,6 +346,11 @@ li {
   margin: 0 0 30px 0;
   position: relative;
   cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .etapes__btn {
+    width: 27%;
+  }
 }
 .etapes__btn .btn__num {
   width: 23px;
@@ -376,6 +400,11 @@ li {
   font-size: 1.6em;
   padding: 30px 20px;
 }
+@media screen and (min-width: 992px) {
+  .restaurants h3 {
+    text-align: center;
+  }
+}
 .restaurants__conteneur {
   display: flex;
   flex-direction: column;
@@ -414,8 +443,9 @@ li {
 }
 @media screen and (min-width: 992px) {
   .carte {
-    width: 43%;
     margin: 20px 20px;
+    width: 43%;
+    height: 280px;
   }
 }
 .carte img {
@@ -424,6 +454,11 @@ li {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+@media screen and (min-width: 992px) {
+  .carte img {
+    height: 210px;
+  }
 }
 .carte h4 {
   font-size: 1em;
@@ -493,8 +528,24 @@ li {
   display: flex;
   flex-direction: column;
 }
+.contenu__carte .carte--colonne {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .contenu__carte .carte--colonne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .contenu__carte .carte__groupe {
   margin: 10px 0 20px 0;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .contenu__carte .carte__groupe {
+    padding: 0 5px;
+  }
 }
 .contenu__carte .carte__groupe h3 {
   font-size: 1.1em;
@@ -606,11 +657,35 @@ footer {
   background-color: #353535;
   padding: 20px 20px 30px 20px;
 }
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 30px 40px 30px 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding: 30px 40px 30px 40px;
+  }
+}
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
   font-weight: 100;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 footer li {
   padding: 3px 0;

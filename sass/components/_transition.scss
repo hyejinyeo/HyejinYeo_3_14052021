@@ -87,6 +87,9 @@
     overflow: hidden;
     .btn__texte {
         width: 100%;
+        @include desktop {
+            width: 85%;
+        }
         .texte__nom {
             overflow: hidden;
             text-overflow: ellipsis;

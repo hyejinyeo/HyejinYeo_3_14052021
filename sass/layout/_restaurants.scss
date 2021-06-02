@@ -5,6 +5,9 @@
     h3 {
         font-size: 1.6em;
         padding: 30px 20px;
+        @include desktop {
+            text-align: center;
+        }
     }
     &__conteneur {
         display: flex;
@@ -24,7 +27,6 @@
     }
 }
 .carte {
-    // width: 330px;
     width: 85%;
     height: 240px;
     background-color: white;
@@ -36,8 +38,9 @@
         width: 43%;
     }
     @include desktop {
-        width: 43%;
         margin: 20px 20px;
+        width: 43%;
+        height: 280px;
     }
     position: relative;
     img {
@@ -46,6 +49,9 @@
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        @include desktop {
+            height: 210px;
+        }
     }
     h4 {
         font-size: 1em;

@@ -8,15 +8,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
     background-color: white;
     opacity: 0; 
-    animation: preloader__opacity 3s 0s both;
+    animation: preloader__opacity 3s 0s;
     &__texte {
         font-family: $font-logo-titres;
         font-size: 1.3em;
-        color: black;
-        z-index: 3;
+        color: black; 
     }
     &__spin {
         position: absolute;
@@ -55,12 +53,17 @@
 @keyframes preloader__opacity {
     0% {
         opacity: 1;
+        z-index: 2;
     }
     80% {
         opacity: 1;
     }
+    95% {
+        z-index: 2;
+    }
     100% {
         opacity: 0;
+        z-index: -1;
     }
 }
 
