@@ -2,12 +2,7 @@
 @mixin btn-gradient ($largeur) {
     text-align: center;
     width: $largeur;
-    height: 50px;
-    line-height: 50px;
-    background-color: $couleur-primaire;
-    background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
-    border-radius: 50px;
-    box-shadow: 3px 5px 7px $couleur-grismoyen;
+    @include btn-base;
     position: relative;
     z-index: 1;
     a {
@@ -24,12 +19,7 @@
         content: "";
         text-align: center;
         width: $largeur;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 50px;
-        background-color: lighten($couleur-primaire, 7);
-        background-image: linear-gradient(to bottom right, lighten($couleur-secondaire, 7), lighten($couleur-primaire, 7));
-        box-shadow: 3px 5px 7px darken($couleur-grismoyen, 7);
+        @include btn-desous;
         position: absolute;
         top: 0;
         right: 0;
@@ -62,8 +52,6 @@
         background:-webkit-linear-gradient(to bottom, $couleur-primaire, $couleur-secondaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        //animation-option2-opacity
-        // opacity: 0;
     }
     &:hover {
         .empty {
@@ -73,9 +61,6 @@
             transform: scale(1);
             transition: transform 500ms ease-in-out;
             transform-origin: bottom center;
-            //animation-option2-opacity
-            // opacity: 1;
-            // transition: opacity 500ms ease-in-out;
         }
     }
 }  
@@ -91,14 +76,10 @@
             width: 85%;
         }
         .texte__nom {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            @include ellipse;
         }
         .texte__details {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            @include ellipse;
         }
     }
     .btn__prix {

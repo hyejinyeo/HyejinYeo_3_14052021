@@ -271,11 +271,12 @@ li {
 .presentation__btn {
   text-align: center;
   width: 210px;
+  text-align: center;
   height: 50px;
   line-height: 50px;
+  border-radius: 50px;
   background-color: #9356DC;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border-radius: 50px;
   box-shadow: 3px 5px 7px #D5D5D5;
   position: relative;
   z-index: 1;
@@ -293,6 +294,7 @@ li {
   content: "";
   text-align: center;
   width: 210px;
+  text-align: center;
   height: 50px;
   line-height: 50px;
   border-radius: 50px;
@@ -565,11 +567,12 @@ li {
 .contenu__carte .contenu__btn {
   text-align: center;
   width: 200px;
+  text-align: center;
   height: 50px;
   line-height: 50px;
+  border-radius: 50px;
   background-color: #9356DC;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border-radius: 50px;
   box-shadow: 3px 5px 7px #D5D5D5;
   position: relative;
   z-index: 1;
@@ -587,6 +590,7 @@ li {
   content: "";
   text-align: center;
   width: 200px;
+  text-align: center;
   height: 50px;
   line-height: 50px;
   border-radius: 50px;
