@@ -10,10 +10,10 @@
 @import "./components/keyframes";
 
 @import "./layout/header";
-@import "./layout/localisation";
-@import "./layout/presentation";
-@import "./layout/fonctionnement";
-@import "./layout/restaurants";
-@import "./layout/menu";
 @import "./layout/footer";
 
+@import "./pages/localisation";
+@import "./pages/presentation";
+@import "./pages/fonctionnement";
+@import "./pages/restaurants";
+@import "./pages/menu";
