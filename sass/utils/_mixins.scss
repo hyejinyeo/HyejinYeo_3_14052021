@@ -13,7 +13,7 @@
     background-image: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
     box-shadow: 3px 5px 7px $couleur-grismoyen;
 }
-@mixin btn-desous {
+@mixin btn-dessous {
     text-align: center;
     height: 50px;
     line-height: 50px;
