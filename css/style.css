@@ -229,6 +229,78 @@ li {
   left: 5px;
 }
 
+footer {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #353535;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 45px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
+  }
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 992px) {
+  footer h3 {
+    padding-right: 150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer h3 {
+    padding-right: 60px;
+  }
+}
+footer ul {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer li {
+  padding: 3px 0;
+  font-size: 0.9em;
+}
+footer li a {
+  color: white;
+}
+footer li a:visited {
+  color: white;
+}
+footer li i {
+  color: white;
+  font-size: 0.8em;
+  width: 15px;
+  padding-right: 10px;
+}
+
 .localisation {
   font-family: "Roboto", sans-serif;
 }
@@ -653,78 +725,6 @@ li {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-
-footer {
-  font-family: "Roboto", sans-serif;
-  color: white;
-  background-color: #353535;
-  padding: 20px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 992px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 45px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 40px;
-  }
-}
-footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.3em;
-  font-weight: 100;
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 992px) {
-  footer h3 {
-    padding-right: 150px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  footer h3 {
-    padding-right: 60px;
-  }
-}
-footer ul {
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-footer li {
-  padding: 3px 0;
-  font-size: 0.9em;
-}
-footer li a {
-  color: white;
-}
-footer li a:visited {
-  color: white;
-}
-footer li i {
-  color: white;
-  font-size: 0.8em;
-  width: 15px;
-  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
