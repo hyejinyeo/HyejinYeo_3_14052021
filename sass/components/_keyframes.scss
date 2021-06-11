@@ -67,17 +67,16 @@
     }
 }
 
-//Pades de menu__1: Fade-in
+//Pages de menu__1: Fade-in
 .fade {
     opacity: 1;
     animation: fade-in 600ms;
-    //un par un
     @for $i from 1 through 10 {
         &--#{$i} {
             animation-delay: 100ms*$i;
         }
     }
-    //par groupes - maintainable code : in case of adding more menu
+    //fade-in par groupes - code plus maintenable en cas d'ajout de menus
     // @for $i from 1 through 10 {
     //     &:nth-child(#{$i}n) {
     //         animation-delay: 100ms*$i;
