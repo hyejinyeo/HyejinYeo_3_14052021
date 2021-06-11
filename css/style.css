@@ -57,6 +57,11 @@ li {
 .item__btn .btn__texte {
   width: 100%;
 }
+@media (max-width: 320px) {
+  .item__btn .btn__texte {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 992px) {
   .item__btn .btn__texte {
     width: 85%;
@@ -88,6 +93,11 @@ li {
 .item__btn:hover .btn__texte {
   width: 70%;
   transition: width 500ms ease-in-out;
+}
+@media (max-width: 320px) {
+  .item__btn:hover .btn__texte {
+    width: 60%;
+  }
 }
 .item__btn:hover .btn__prix {
   transform: translateX(-45px);
@@ -701,8 +711,19 @@ footer li i {
   display: block;
   padding-bottom: 2px;
 }
+@media (max-width: 320px) {
+  .carte__container .carte__item .item__btn .btn__texte .texte__nom {
+    font-size: 0.9em;
+    padding-bottom: 4px;
+  }
+}
 .carte__container .carte__item .item__btn .btn__texte .texte__details {
   font-size: 0.9em;
+}
+@media (max-width: 320px) {
+  .carte__container .carte__item .item__btn .btn__texte .texte__details {
+    font-size: 0.79em;
+  }
 }
 .carte__container .carte__item .item__btn .btn__prix {
   display: inline-block;
@@ -712,6 +733,11 @@ footer li i {
   font-size: 0.9em;
   font-weight: 700;
   background-color: white;
+}
+@media (max-width: 320px) {
+  .carte__container .carte__item .item__btn .btn__prix {
+    font-size: 0.8em;
+  }
 }
 .carte__container .carte__item .item__btn .btn__hover {
   display: block;

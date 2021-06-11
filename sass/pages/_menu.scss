@@ -97,12 +97,19 @@
             .btn__texte {
                 .texte__nom {
                     font-size: 1em;
+                    @include mobile-petit {
+                        font-size: 0.9em;
+                        padding-bottom: 4px;
+                    }
                     font-weight: 600;
                     display: block;
                     padding-bottom: 2px;
                 }
                 .texte__details {
                     font-size: 0.9em;
+                    @include mobile-petit {
+                        font-size: 0.79em;
+                    }
                 }
             }
             .btn__prix {
@@ -111,6 +118,9 @@
                 line-height: 60px;
                 padding: 10px 2px;
                 font-size: 0.9em;
+                @include mobile-petit {
+                    font-size: 0.8em;
+                }
                 font-weight: 700;
                 background-color: white;
             }

@@ -70,6 +70,9 @@
     overflow: hidden;
     .btn__texte {
         width: 100%;
+        @include mobile-petit {
+            width: 80%
+        }
         @include desktop {
             width: 85%;
         }
@@ -96,6 +99,9 @@
     &:hover {
         .btn__texte {
             width: 70%;
+            @include mobile-petit {
+                width: 60%
+            }
             transition: width 500ms ease-in-out;
         }
         .btn__prix {

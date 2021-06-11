@@ -9,6 +9,7 @@ $couleur-grisfonce: #353535;
 
 //Responsive Web - Breakpoints
 $breakpoints: (
+    mobile-min: 320px,
     mobile: 767px,
     tablette-min: 768px,
     tablette-max: 991px, 

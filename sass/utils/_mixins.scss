@@ -31,6 +31,11 @@
 }
 
 //Responsive Web - Breakpoints
+@mixin mobile-petit {
+    @media (max-width: map-get($breakpoints, mobile-min)) {
+        @content;
+    }
+}
 @mixin tablette {
     @media screen and (min-width: map-get($breakpoints, tablette-min)) and (max-width: map-get($breakpoints, tablette-max)){
         @content;
