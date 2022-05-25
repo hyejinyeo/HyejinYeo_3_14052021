@@ -2,7 +2,7 @@
 Projet 3 du parcours développeur web d’OpenClassrooms
 
 ## Technologies utilisées
-HHTML, CSS, Sass
+HTML, CSS, Sass
 
 ## Compétences acquises
 - Transformation d'une maquette en site de réservation de restaurant gastronomique
