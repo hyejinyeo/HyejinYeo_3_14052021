@@ -1,7 +1,7 @@
 .restaurants {
     font-family: $font-texte;
     background-color: $couleur-grisclair;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     h3 {
         font-size: 1.6em;
         padding: 30px 20px;
@@ -10,6 +10,8 @@
         }
     }
     &__conteneur {
+        margin: 0 auto;
+        max-width: 1400px;
         display: flex;
         flex-direction: column;
         justify-content: center;

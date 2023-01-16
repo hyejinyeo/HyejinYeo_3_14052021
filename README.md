@@ -1,6 +1,8 @@
 # OHMYFOOD
 Projet 3 du parcours développeur web d’OpenClassrooms
 
+## Scénario
+
 ## Technologies utilisées
 HTML, CSS, Sass
 

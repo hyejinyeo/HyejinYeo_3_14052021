@@ -41,6 +41,8 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1600px;
     .carte--colonne {
         width: 100%;
         @include desktop {

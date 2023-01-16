@@ -243,68 +243,72 @@ footer {
   font-family: "Roboto", sans-serif;
   color: white;
   background-color: #353535;
-  padding: 20px 20px 30px 20px;
+}
+footer .footer {
+  margin: 0 auto;
+  max-width: 1300px;
   display: flex;
   flex-direction: column;
+  padding: 20px 20px 30px 20px;
 }
 @media screen and (min-width: 992px) {
-  footer {
+  footer .footer {
     display: flex;
     flex-direction: row;
-    padding: 30px 45px;
+    padding: 45px 45px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  footer {
+  footer .footer {
     display: flex;
     flex-direction: row;
     padding: 30px 40px;
   }
 }
-footer h3 {
+footer .footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
   font-weight: 100;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 992px) {
-  footer h3 {
+  footer .footer h3 {
     padding-right: 150px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  footer h3 {
+  footer .footer h3 {
     padding-right: 60px;
   }
 }
-footer ul {
+footer .footer ul {
   width: 100%;
 }
 @media screen and (min-width: 992px) {
-  footer ul {
+  footer .footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  footer ul {
+  footer .footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-footer li {
+footer .footer li {
   padding: 3px 0;
   font-size: 0.9em;
 }
-footer li a {
+footer .footer li a {
   color: white;
 }
-footer li a:visited {
+footer .footer li a:visited {
   color: white;
 }
-footer li i {
+footer .footer li i {
   color: white;
   font-size: 0.8em;
   width: 15px;
@@ -396,7 +400,9 @@ footer li i {
 
 .fonctionnement {
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 1300px;
 }
 .fonctionnement h3 {
   font-size: 1.6em;
@@ -478,7 +484,7 @@ footer li i {
 .restaurants {
   font-family: "Roboto", sans-serif;
   background-color: #F6F6F6;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .restaurants h3 {
   font-size: 1.6em;
@@ -490,6 +496,8 @@ footer li i {
   }
 }
 .restaurants__conteneur {
+  margin: 0 auto;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -611,6 +619,8 @@ footer li i {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 .contenu__carte .carte--colonne {
   width: 100%;
